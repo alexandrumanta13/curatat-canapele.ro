@@ -1,0 +1,72 @@
+.feature_action_area .feature_action_left .img_box {
+  background: url(/assets/images/curatare-canapele.jpg) center right no-repeat;
+
+}
+
+.feature_action_area:before {
+  background: url(/assets/images/curatare-canapele-bucuresti.jpg) center left no-repeat;
+}
+
+.feature_action_area .feature_action_right ul li i {
+  color: #2f3437;
+}
+
+.market_innovation {
+
+  &.section-one {
+    &:before {
+      background: url(/assets/images/curatare-canapea-pete-de-grasime.jpg) center right no-repeat;
+      background-size: cover;
+      width: 863px;
+    }
+  }
+
+  &.section-two {
+    &:before {
+      background: url(/assets/images/curatare-canapele-pete-de-inghetata.jpg) center right no-repeat;
+      background-size: cover;
+      width: 863px;
+      left:0;
+    }
+  }
+
+  &.section-three {
+    &:before {
+      background: url(/assets/images/curatare-canepea-pete-de-mancare.jpg) center right no-repeat;
+      background-size: cover;
+      width: 863px;
+    }
+  }
+
+  &.section-four {
+    &:before {
+      background: url(/assets/images/curatare-canapele-pete-de-cafea.jpg) center right no-repeat;
+      background-size: cover;
+      width: 863px;
+      left:0;
+    }
+  }
+  &.section-five {
+    &:before {
+      background: url(/assets/images/curatare-canapele-birou.jpg) center right no-repeat;
+      background-size: cover;
+      width: 863px;
+    }
+  }
+
+  &.right {
+    .triangle_shape, .triangle_shape_2 {
+      right: 120px;
+      left: auto
+    }
+  }
+  
+}
+
+.installation_area {
+  &.right {
+    &:before {
+      left: 0;
+    }
+  }
+}

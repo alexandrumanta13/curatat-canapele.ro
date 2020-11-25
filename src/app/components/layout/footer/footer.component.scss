@@ -1,0 +1,19 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 250px;
+    }
+
+    .info {
+        display: flex;
+        .links {
+            display: flex;
+            margin-left: auto;
+
+            a {
+                padding: 0 16px;
+            }
+        }
+    }
+}
