@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
-
-import { PricesComponent } from './pages/prices/prices.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 
@@ -15,6 +13,7 @@ import { GdprComponent } from './pages/gdpr/gdpr.component';
 import { ConfidentialityComponent } from './pages/confidentiality/confidentiality.component';
 import { CookiesComponent } from "./pages/cookies/cookies.component";
 import { TermsComponent } from "./pages/terms/terms.component";
+import { CuratareCanapeleComponent } from './pages/curatare-canapele/curatare-canapele.component';
 
 
 const routes: Routes = [
@@ -30,22 +29,21 @@ const routes: Routes = [
   {
     path: 'despre-noi', component: AboutComponent,
     data: {
+      title: 'curatare canapele',
+      description: 'Firma profesionala de curatare canapele la domiciliu in Bucuresti si Ilfov. Cu aspirator injectie-extractie. Dezinfectam si igeinizam.',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'curatare-canapele', component: CuratareCanapeleComponent,
+    data: {
       title: 'Despre noi',
       description: 'Apeleaza la servicii profesionale de curatenie la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.Description Meta Tag Content',
       ogUrl: 'your og url'
     }
   },
 
-  {
-    path: 'preturi', component: PricesComponent,
-    data: {
-      title: 'Preturi',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
-      ogUrl: 'your og url'
-    }
-  },
-
-  {
+   {
     path: 'setari-gdpr', component: GdprComponent,
     data: {
       title: 'Setari GDPR',
