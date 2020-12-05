@@ -27,7 +27,8 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { CuratareCanapeleComponent } from './pages/curatare-canapele/curatare-canapele.component';
-  
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -40,9 +41,9 @@ import { CuratareCanapeleComponent } from './pages/curatare-canapele/curatare-ca
     HomeComponent,
     NotFoundComponent,
     FormContactCategoriesComponent,
-    
+
     SimpleFromContactComponent,
-   
+
     ContactComponent,
     GdprComponent,
     ConfidentialityComponent,
@@ -59,8 +60,10 @@ import { CuratareCanapeleComponent } from './pages/curatare-canapele/curatare-ca
     HttpClientModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NgImageSliderModule
-    
+    NgImageSliderModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+
   ],
   exports: [
     QuickFormContactComponent

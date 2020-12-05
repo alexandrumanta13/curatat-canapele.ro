@@ -200,23 +200,23 @@
          * =====================================***/
          if($(".client_slider").length) {
              $('.client_slider').owlCarousel({
-                 autoHeight: true,
-                 autoplay: true,
-                 loop: true,
-                 nav: false,
-                 autoplayTimeout: 3000,
-                 dots: false,
-                 responsive: {
-                     0: {
-                         items: 1,
-                     },
-                     600: {
-                         items: 3,
-                     },
-                     1000: {
-                         items: 5,
-                     }
-                 }
+                //  autoHeight: true,
+                //  autoplay: true,
+                //  loop: true,
+                //  nav: false,
+                //  autoplayTimeout: 3000,
+                //  dots: false,
+                //  responsive: {
+                //      0: {
+                //          items: 1,
+                //      },
+                //      600: {
+                //          items: 3,
+                //      },
+                //      1000: {
+                //          items: 5,
+                //      }
+                //  }
              });
          }
 

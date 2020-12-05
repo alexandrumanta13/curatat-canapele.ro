@@ -7,9 +7,15 @@
 
     .info {
         display: flex;
+        @media(max-width: 991px) {
+            flex-wrap: wrap;
+        }
         .links {
             display: flex;
             margin-left: auto;
+            @media(max-width: 991px) {
+                flex-direction: column;
+            }
 
             a {
                 padding: 0 16px;

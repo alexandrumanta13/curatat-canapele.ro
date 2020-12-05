@@ -21,7 +21,7 @@ const routes: Routes = [
     path: '', component: HomeComponent,
     data: {
       title: 'Curatenie perfecta',
-      description: 'Description Meta Tag Content',
+      description: 'Firma profesionala de curatare canapele la domiciliu in Bucuresti si Ilfov',
       ogUrl: 'your og url'
     }
   },
@@ -37,8 +37,8 @@ const routes: Routes = [
   {
     path: 'curatare-canapele', component: CuratareCanapeleComponent,
     data: {
-      title: 'Despre noi',
-      description: 'Apeleaza la servicii profesionale de curatenie la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.Description Meta Tag Content',
+      title: 'curatare canapele',
+      description: 'Firma profesionala de curatare canapele la domiciliu in Bucuresti si Ilfov. Cu aspirator injectie-extractie. Dezinfectam si igeinizam.',
       ogUrl: 'your og url'
     }
   },

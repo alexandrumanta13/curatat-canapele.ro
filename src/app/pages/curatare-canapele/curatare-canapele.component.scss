@@ -1,6 +1,6 @@
 .section_dark_bg {
     background-color: #daeeff;
-    color:  #1e294d;
+    color: #1e294d;
 }
 
 .market_innovation:before {
@@ -8,7 +8,8 @@
     background-size: cover;
 }
 
-.installation_area .installation_left .hero_section_title h1, .installation_area .installation_left .hero_section_title h3 {
+.installation_area .installation_left .hero_section_title h1,
+.installation_area .installation_left .hero_section_title h3 {
     margin-bottom: 16px;
     color: #1e294d;
 }
@@ -16,9 +17,174 @@
 .innovation_list {
     li {
         color: #1e294d;
+
         img {
             width: 20px;
             margin-right: 16px;
         }
+    }
+}
+
+.section-full-width {
+    display: flex;
+    width: 100%;
+    height: 355px;
+    position: relative;
+    background-image: url('/assets/images/curatare-canapele-la-domiciliu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-list-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+
+    ul {
+
+        li {
+            margin-bottom: 16px;
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: 767px) and (min-width: 319px) {
+                margin-left: 0;
+            }
+
+            img {
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.before-and-after-section {
+    margin: 0 -16px;
+
+    .slide {
+        margin: 0 16px;
+    }
+}
+
+.pricing {
+    .col-pricing {
+        display: flex;
+
+        ul {
+            display: block;
+            margin: 40px auto;
+        }
+    }
+
+    .pricing-action {
+        display: flex;
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.feature-box:first-child {
+    margin-top: 0;
+}
+
+.fbox-center {
+    -ms-flex-preferred-size: auto;
+}
+
+.fbox-center {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-box {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+@media (min-width: 992px) {
+    [class^=col-]:not(:last-child) .feature-box .fbox-img:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: 150%;
+        border-top: 1px dashed var(--themecolor, #335EEE);
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    .feature-box .fbox-img img {
+        z-index: 3;
+        position: relative;
+        background-color: #FFF;
+        height: 160px;
+        margin-bottom: 20px;
+
+
+    }
+}
+
+@media (max-width: 991px) {
+    .feature-box {
+        margin-bottom: 40px;
+        .fbox-img {
+            margin-bottom: 20px;
+            img {
+                height: 160px;
+                
+            }
+        }
+    }
+
+}
+
+.btn-secondary {
+    border: 3px solid #7b8083;
+    color: #7b8083;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-weight: 500;
+
+    &:hover {
+        &:before, &:after {
+            background: #7b8083;
+        }
+        color: #fff;
+    }
+}
+
+.actions {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    a {
+        margin: 0 16px;
     }
 }
