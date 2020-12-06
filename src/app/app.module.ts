@@ -29,6 +29,8 @@ import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { CuratareCanapeleComponent } from './pages/curatare-canapele/curatare-canapele.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CuratareTapiterieAutoComponent } from './pages/curatare-tapiterie-auto/curatare-tapiterie-auto.component';
+import { CuratareSalteleComponent } from './pages/curatare-saltele/curatare-saltele.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     TermsComponent,
     ThankYouComponent,
     WhatsappComponent,
-    CuratareCanapeleComponent
+    CuratareCanapeleComponent,
+    CuratareTapiterieAutoComponent,
+    CuratareSalteleComponent
   ],
   imports: [
     BrowserModule,

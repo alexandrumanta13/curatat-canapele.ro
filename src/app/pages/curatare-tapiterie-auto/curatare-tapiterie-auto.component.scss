@@ -4,7 +4,7 @@
 }
 
 .market_innovation:before {
-    background: url('/assets/images/happy-blissful-girl-enjoying-sunny-morning-home-holding-favorite-book-drinking-coffee-warm-cozy-mood-pink-soft-colors.jpg') center right no-repeat;
+    background: url('/assets/images/curatare-tapiterie-auto.jpg') center right no-repeat;
     background-size: cover;
 }
 
@@ -30,7 +30,7 @@
     width: 100%;
     height: 355px;
     position: relative;
-    background-image: url('/assets/images/curatare-canapele-la-domiciliu.jpg');
+    background-image: url('/assets/images/curatare-tapiterie-auto-si-detailing-auto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,8 +43,10 @@
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    flex-wrap: wrap;
 
     ul {
+        margin-bottom: 80px;
 
         li {
             margin-bottom: 16px;
@@ -149,11 +151,13 @@
 @media (max-width: 414px) {
     .feature-box {
         margin-bottom: 40px;
+
         .fbox-img {
             margin-bottom: 20px;
+
             img {
                 height: 160px;
-                
+
             }
         }
     }
@@ -175,9 +179,12 @@
     padding: 21px 41px;
 
     &:hover {
-        &:before, &:after {
+
+        &:before,
+        &:after {
             background: #7b8083;
         }
+
         color: #fff;
     }
 }
@@ -186,15 +193,17 @@
     margin: 40px;
     display: flex;
     justify-content: center;
+
     a {
         margin: 0 16px;
     }
 
     @media (max-width: 414px) {
         flex-direction: column;
+
         a {
             margin: 16px 0;
         }
-        
+
     }
 }
