@@ -70,3 +70,43 @@
     }
   }
 }
+
+.light_bg {
+  background-color: #daeeff;
+
+  h1, p {
+    color: #2f3437;
+  }
+  
+  .btn {
+    background-color: #f44336;
+  }
+}
+
+
+.automation_control_area .automation_control_section .automation_control_box .plus_point {
+  background: #f44336;
+}
+
+.section_dark_bg {
+  background: #daeeff;
+}
+
+.hero_section_title h4 {
+  color: #f44336;
+  &:before {
+    background: #f44336;
+  }
+}
+
+.market_innovation .installation_left .innovation_list li i, .automation_control_area .automation_control_section .automation_control_box .automation_details_box i {
+  color: #f44336;
+}
+
+.installation_area .installation_left .hero_section_title h1, .market_innovation .installation_left .innovation_list li {
+  color: #2f3437;
+}
+
+.automation_control_area .automation_control_section .automation_control_box .automation_details_box {
+  border-color: #f44336;
+}

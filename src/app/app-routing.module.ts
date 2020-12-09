@@ -105,7 +105,7 @@ const routes: Routes = [
   },
   { path: '404', component: NotFoundComponent },
 
-  { path: 'thank-you', component: ThankYouComponent },
+  { path: 'mesaj-trimis', component: ThankYouComponent },
 
   { path: '**', redirectTo: '/404' }
 ];

@@ -1,13 +1,12 @@
 section {
-
+  margin: 98px 0;
   position: relative;
 
   .message {
-    position: absolute;
-    width: 50%;
-    top: 35%;
-
-    transform: translate(20%, 30%);
+    h1 {
+      font-size: 28px;
+      margin: 20px 0 40px 0;
+  }
 
     @media only screen and (max-width: 767px) and (min-width: 319px) {
       position: relative;
@@ -20,6 +19,7 @@ section {
       z-index: 1;
         h1 {
             font-size: 28px;
+            
         }
         h2 {
             font-size: 20px;

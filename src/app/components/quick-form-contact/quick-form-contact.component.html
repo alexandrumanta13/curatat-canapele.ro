@@ -1,85 +1,36 @@
-<!-- <form [formGroup]="form" (ngSubmit)="submit()">
-          
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input 
-            formControlName="name"
-            id="name" 
-            type="text" 
-            class="form-control">
-        <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
-            <div *ngIf="f.name.errors.required">Name is required.</div>
-            <div *ngIf="f.name.errors.minlength">Name should be 3 character.</div>
-        </div>
-    </div>
-   
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input 
-            formControlName="email"
-            id="email" 
-            type="text" 
-            class="form-control">
-        <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
-            <div *ngIf="f.email.errors.required">Email is required.</div>
-            <div *ngIf="f.email.errors.email">Please, enter valid email address.</div>
-        </div>
-    </div>
-   
-    <div class="form-group">
-        <label for="body">Body</label>
-        <textarea 
-            formControlName="body"
-            id="body" 
-            type="text" 
-            class="form-control">
-        </textarea>
-        <div *ngIf="f.body.touched && f.body.invalid" class="alert alert-danger">
-            <div *ngIf="f.body.errors.required">Body is required.</div>
-        </div>
-    </div>
-  
-    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
-</form> -->
-
-<form id="quick-contact" class="contact-form col-md-4" [formGroup]="form" (ngSubmit)="submit()">
-  <h3> Folosim dezinfectant <span>avizat de Ministerul Sanatatii </span></h3>
-  <div class="form-control">
-    <div class="row">
-      <div class="form-group col-md-6 col-xs-12">
-        <input formControlName="name" id="name" type="text" class="form-control" placeholder="Nume">
-        <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
-          <div *ngIf="f.name.errors.required">Introduceti numele</div>
-          <div *ngIf="f.name.errors.minlength">Numele trebuie sa contina cel putin 3 litere</div>
-        </div>
-      </div>
-      <div class="form-group col-md-6 col-xs-12">
-        <input formControlName="email" id="email" type="text" class="form-control " placeholder="Email">
-        <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
-          <div *ngIf="f.email.errors.required">Introduceti emailul</div>
-          <div *ngIf="f.email.errors.minlength">Formatul nu este corect</div>
-          <div *ngIf="f.email.errors.required">Formatul nu este corect</div>
-        </div>
-      </div>
-      <div class="form-group col-md-12 col-xs-12">
-        <input formControlName="phone" id="phone" type="text" class="form-control" placeholder="Telefon">
-        <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
-          <div *ngIf="f.phone.errors.required">Introduceti numarul</div>
-          <div *ngIf="f.phone.errors.pattern">Telefonul nu are formatul corect</div>
-        </div>
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+  <div class="row">
+    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+      <div class="alert alert-danger" *ngIf="!contactForm.valid && contactForm.touched">
+        <span class="help-block">Va rugam sa completati toate datele</span>
       </div>
     </div>
-
-  
-    <div class="form-group">
-      <textarea formControlName="body" id="body" name="quick-message"
-        placeholder="Ce vrei sa curatam impecabil?"></textarea>
-      <div *ngIf="f.body.touched && f.body.invalid" class="alert alert-danger">
-        <div *ngIf="f.body.errors.required">Introduceti mesajul</div>
-      </div>
-    </div>
-
-    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Trimite</button>
-  </div>
-  <div id="alert-msg" class="alert-msg"></div>
+      <div class="col-md-6 pr_10">
+          <div class="input-group">
+              <input type="text" name="name" required minlength="3" ngModel placeholder="Nume">
+          </div><!--end .input-group-->
+      </div><!--end .col-md-6-->
+      <div class="col-md-6 pl_10">
+          <div class="input-group">
+              <input type="email" name="email" placeholder="email" required minlength="6" ngModel>
+          </div><!--end .input-group-->
+      </div><!--end .col-md-6-->
+      <div class="col-md-6 pl_10">
+        <div class="input-group">
+            <input type="text" name="phone" placeholder="Telefon" required minlength="3" ngModel>
+        </div><!--end .input-group-->
+    </div><!--end .col-md-6-->
+      <div class="col-md-12">
+          <div class="input-group">
+              <textarea name="message" id="message" ngModel placeholder="Scrie mesajul aici"></textarea>
+              
+          </div><!--end .input-group-->
+          <div class="form-group col-md-12 col-sm-12 col-xs-12 gdpr">
+            <input ngModel required type="checkbox" name="gdpr">
+            <label for="gdpr">Sunt de acord cu inregistrarea, stocarea si prelucrarea datelor mele personale conform <a routerLink="/confidentialitate">Politicii de Confidentialitate</a></label>
+          </div>
+          <button class="btn btn-default default_btn" [disabled]="!contactForm.valid" type="submit">Trimite</button>
+      </div><!--end .col-md-12-->
+    
+  </div><!--end .row-->
 </form>

@@ -31,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CuratareTapiterieAutoComponent } from './pages/curatare-tapiterie-auto/curatare-tapiterie-auto.component';
 import { CuratareSalteleComponent } from './pages/curatare-saltele/curatare-saltele.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { CuratareSalteleComponent } from './pages/curatare-saltele/curatare-salt
     WhatsappComponent,
     CuratareCanapeleComponent,
     CuratareTapiterieAutoComponent,
-    CuratareSalteleComponent
+    CuratareSalteleComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
