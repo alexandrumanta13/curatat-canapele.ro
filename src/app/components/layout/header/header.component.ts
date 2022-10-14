@@ -6,10 +6,23 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  active: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu() {
+    this.active = true;
+  }
+  closeMenu() {
+    this.active = false;
+  }
+
+  navigateTo(url: string) {
+    this.active = false;
+    this.router.navigate([url])
   }
 
   toggleLink(event, link) {

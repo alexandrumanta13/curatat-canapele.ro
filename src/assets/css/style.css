@@ -251,7 +251,7 @@ video {
   padding: 120px 0; }
   @media (min-width: 481px) and (max-width: 767px), only screen and (max-width: 480px) {
     .section_padding {
-      padding: 90px 0; } }
+      padding: 40px 0; } }
 
 .section_bb {
   border-bottom: 2px solid #f2f2f2; }

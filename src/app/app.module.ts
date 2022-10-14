@@ -32,6 +32,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CuratareTapiterieAutoComponent } from './pages/curatare-tapiterie-auto/curatare-tapiterie-auto.component';
 import { CuratareSalteleComponent } from './pages/curatare-saltele/curatare-saltele.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     NgImageSliderModule,
     BrowserAnimationsModule,
     CarouselModule,
-
+    RouterModule
   ],
   exports: [
     QuickFormContactComponent

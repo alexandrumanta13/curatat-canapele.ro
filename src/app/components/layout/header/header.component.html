@@ -4,7 +4,7 @@
      <header class="header_area">
 		<div class="main_menu_area menu_style_2 scroll_fixed">
 			<div class="left_logo">
-				<button type="button" class="navbar-toggles">
+				<button type="button" (click)="toggleMenu()" class="navbar-toggles">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -13,28 +13,28 @@
 					<img src="assets/images/logo-canapele.png" alt="Logo">
 				</a>
 			</div><!--end .left_logo-->
-			<div class="middle_menu collapse_responsive text-right">
-				<span class="close_menu_area_btn">x</span>
+			<div [class.active]="active" class="middle_menu collapse_responsive text-right">
+				<span (click)="closeMenu()" class="close_menu_area_btn">x</span>
 				<div class="collapse navbar-collapse remove_padding" id="myNavbar">
 					<ul class="nav navbar-nav text-center">
 						<li >
-							<a routerLink="/">Acasa </a>
+							<a (click)="navigateTo('/')">Acasa </a>
 							
 						</li>
 						
-						<li><a routerLink="/curatare-canapele">Curatare Canapele</a></li>
-						<li><a routerLink="/curatare-saltele">Curatare Saltele</a></li>
-						<li><a routerLink="/curatare-tapiterie-auto">Curatare Tapiterie Auto</a></li>
-						<li>
+						<li><a (click)="navigateTo('/curatare-canapele')">Curatare Canapele</a></li>
+						<li><a (click)="navigateTo('/curatare-saltele')">Curatare Saltele</a></li>
+						<li><a (click)="navigateTo('/curatare-tapiterie-auto')">Curatare Tapiterie Auto</a></li>
+						<!-- <li>
 							<a routerLink="/galerie-foto">Galerie foto</a>
-						</li>
-						<li><a routerLink="/contact">Contact</a></li>
+						</li> -->
+						<li><a (click)="navigateTo('/contact')">Contact</a></li>
 					</ul>
 				</div><!--end .collapse-->
 			</div><!--end .middle_menu-->
-			<a href="tel:+40748245081" class="right_contact">
+			<a href="tel:+40747171409" class="right_contact">
 				<i class="icon-phone-call"></i>
-				<p>Salveaza canapeaua <span>(0748) 245 081</span></p>
+				<p>Salveaza canapeaua <span>(0747) 171 409</span></p>
 			</a><!--end .right_contact-->
 		</div><!--end .main_menu_area-->
 	</header><!--end .header_area-->

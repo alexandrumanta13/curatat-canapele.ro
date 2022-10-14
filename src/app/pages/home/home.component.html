@@ -21,9 +21,11 @@
 
               <h1>Canapeaua e Locul</h1>
               <h3>cu Cele mai Frumoase Amintiri</h3>
+              <h3><strong>Da-i un refresh!</strong></h3>
 
             </div>
-            <button class="btn btn-primary default_btn btn-red  mb_30" type="submit">Cere oferta</button>
+            <a href="tel:+40747171409" class="btn btn-primary default_btn btn-red mb_30">Suna (0747) 171 409</a>
+
             <!--end .hero_section_title-->
             <ul>
               <li><i class="icon-turn-off"></i> Te scapam de cele mai incapatanate pete</li>
@@ -228,14 +230,23 @@
               <li><i class="fa fa-check-circle"></i>Pete de cafea</li>
               <li><i class="fa fa-check-circle"></i>Pete de lapte</li>
             </ul>
+            
           </div>
           <!--end .installation_left-->
         </div>
         <!--end .col-md-6-->
       </div>
-
+      <div class="row">
+        <div class="col-md-6 col-sm-push-6">
+          <div class="actions">
+            <a href="tel:+40747171409" class="btn btn-primary default_btn btn-red">Suna</a>
+            <a [routerLink]="['/contact']" class="btn btn-secondary default_btn">Cere oferta</a>
+          </div>
+        </div>
+      </div>
       <!--end .row-->
     </div>
+    
     <!--end .container-->
   </section>
   <!--end .installation_area-->
@@ -284,23 +295,25 @@
         <div class="col-md-12">
           <div class="hero_section_title text-center mb_50">
             <h1 class="mb_20">Canapeaua este expusa zilnic la uzura</h1>
-            <p class="mb_50">Curatarea obisnuita, cu apa si solutii din  comert, nu este suficienta pentru indepartarea prafului si a acarienilor ascunsi in profunzimea tesaturii. Din contra, fac ca murdaria sa patrunda si mai adanc, facilitand apartia bacteriilor, a mucegaiului si a mirosurilor neplacute.</p>
+            <p class="mb_50">Curatarea obisnuita, cu apa si solutii din comert, nu este suficienta pentru indepartarea
+              prafului si a acarienilor ascunsi in profunzimea tesaturii. Din contra, fac ca murdaria sa patrunda si mai
+              adanc, facilitand apartia bacteriilor, a mucegaiului si a mirosurilor neplacute.</p>
           </div>
           <!--end .hero_section_title-->
         </div>
         <!--end .col-md-12-->
       </div>
       <!--end .row-->
-  
-    
-    <img src="assets/images/firma-curatare-canapele.jpg" alt="House" class=" mb_50">
-    <div class="hero_section_title text-center mb_50">
-      <h1 class="mb_20">Suntem pregatiti sa-ti salvam canapeaua, scaunele si salteaua</h1>
-      <p class="mb_50">Scoatem pete, igenizam in profunzime si dezinfectam</p>
-      <a href="tel:+40748245081" class="btn btn-primary default_btn btn-red">Suna (0748) 245 081</a>
+
+
+      <img src="assets/images/firma-curatare-canapele.jpg" width="100%" alt="" class=" mb_50">
+      <div class="hero_section_title text-center mb_50">
+        <h1 class="mb_20">Suntem pregatiti sa-ti salvam canapeaua, scaunele si salteaua</h1>
+        <p class="mb_50">Scoatem pete, igenizam in profunzime si dezinfectam</p>
+        <a href="tel:+40747171409" class="btn btn-primary default_btn btn-red">Suna (0747) 171 409</a>
+      </div>
     </div>
-  </div>
-  <!--end .container-->
+    <!--end .container-->
   </section>
 
   <app-testimonials></app-testimonials>
@@ -343,7 +356,7 @@
               <div class="automation_details_box text-left">
                 <i class="icon-idea"></i>
                 <div class="automation_details">
-                  
+
                   <h3>Curatenie bucatarii
                   </h3>
                   <p>
@@ -367,7 +380,7 @@
                   </h3>
                   <p>La cerere sau abonamente
                     Curatenie de intretinere, aspirare mochete
-                    </p>
+                  </p>
                 </div>
                 <!--end automation_details-->
               </div>
@@ -402,7 +415,7 @@
               <i class="fa fa-plus plus_point"></i>
               <div class="automation_details_box">
                 <i class="icon-cctv"></i>
-               
+
                 <!--end automation_details-->
               </div>
               <!--end .automation_details_box-->
@@ -412,7 +425,7 @@
               <i class="fa fa-plus plus_point"></i>
               <div class="automation_details_box">
                 <i class="icon-cctv"></i>
-               
+
                 <!--end automation_details-->
               </div>
               <!--end .automation_details_box-->
@@ -429,7 +442,7 @@
                   <h3>Curatare si detailing auto</h3>
                   <p>Curatare profesionala tapiterie
                     Autoturisme, rulote, cabine de tir, avioane
-                    </p>
+                  </p>
                 </div>
                 <!--end automation_details-->
               </div>
@@ -451,15 +464,19 @@
     <img src="assets/images/wlc-shape-1.png" alt="Shape" class="map_shape cta_shape_1">
     <img src="assets/images/wlc-shape-2.png" alt="Shape" class="map_shape_2 cta_shape_2">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="cta_box">
-                    <h1>CEL MAI SIMPLU MOD DE A TE MENTINE IN SIGURANTA</h1>
-                    <p>Curatam si Dezinfectam Canepele, Saltele si Tapiterii Auto oriunde in Bucuresti si Ilfov</p>
-                    <a routerLink="/contact" class="btn btn-default default_btn">Cere oferta</a>
-                    <img class="house_shape" src="assets/images/curatare-canapele-scaune-saltele.png" alt="House Image">
-                </div><!--end .cta_box-->
-            </div><!--end .col-md-12-->
-        </div><!--end .row-->
-    </div><!--end .container-->
-</section>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cta_box">
+            <h1>CEL MAI SIMPLU MOD DE A TE MENTINE IN SIGURANTA</h1>
+            <p>Curatam si Dezinfectam Canepele, Saltele si Tapiterii Auto oriunde in Bucuresti si Ilfov</p>
+            <a routerLink="/contact" class="btn btn-default default_btn">Cere oferta</a>
+            <img class="house_shape" src="assets/images/curatare-canapele-scaune-saltele.png" alt="House Image">
+          </div>
+          <!--end .cta_box-->
+        </div>
+        <!--end .col-md-12-->
+      </div>
+      <!--end .row-->
+    </div>
+    <!--end .container-->
+  </section>

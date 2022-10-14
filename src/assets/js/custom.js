@@ -73,12 +73,12 @@
             $('.highlight_dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
-        $(document).on('click', '.main_menu_area .navbar-toggles', function () {
-            $(".header_area .main_menu_area .collapse_responsive").toggleClass('active');
-        });
-        $(document).on('click', '.header_area .main_menu_area .collapse_responsive .close_menu_area_btn', function () {
-            $(".header_area .main_menu_area .collapse_responsive").removeClass('active');
-        });
+        // $(document).on('click', '.main_menu_area .navbar-toggles', function () {
+        //     $(".header_area .main_menu_area .collapse_responsive").toggleClass('active');
+        // });
+        // $(document).on('click', '.header_area .main_menu_area .collapse_responsive .close_menu_area_btn', function () {
+        //     $(".header_area .main_menu_area .collapse_responsive").removeClass('active');
+        // });
 
         /*** =====================================
          * -05 Lightbox

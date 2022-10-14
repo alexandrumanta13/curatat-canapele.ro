@@ -26,7 +26,7 @@
       background: url(/assets/images/curatare-canapele-pete-de-inghetata.jpg) center right no-repeat;
       background-size: cover;
       width: 863px;
-      left:0;
+      left: 0;
     }
   }
 
@@ -43,9 +43,10 @@
       background: url(/assets/images/curatare-canapele-pete-de-cafea.jpg) center right no-repeat;
       background-size: cover;
       width: 863px;
-      left:0;
+      left: 0;
     }
   }
+
   &.section-five {
     &:before {
       background: url(/assets/images/curatare-canapele-birou.jpg) center right no-repeat;
@@ -55,12 +56,14 @@
   }
 
   &.right {
-    .triangle_shape, .triangle_shape_2 {
+
+    .triangle_shape,
+    .triangle_shape_2 {
       right: 120px;
       left: auto
     }
   }
-  
+
 }
 
 .installation_area {
@@ -74,10 +77,11 @@
 .light_bg {
   background-color: #daeeff;
 
-  h1, p {
+  h1,
+  p {
     color: #2f3437;
   }
-  
+
   .btn {
     background-color: #f44336;
   }
@@ -94,19 +98,60 @@
 
 .hero_section_title h4 {
   color: #f44336;
+
   &:before {
     background: #f44336;
   }
 }
 
-.market_innovation .installation_left .innovation_list li i, .automation_control_area .automation_control_section .automation_control_box .automation_details_box i {
+.market_innovation .installation_left .innovation_list li i,
+.automation_control_area .automation_control_section .automation_control_box .automation_details_box i {
   color: #f44336;
 }
 
-.installation_area .installation_left .hero_section_title h1, .market_innovation .installation_left .innovation_list li {
+.installation_area .installation_left .hero_section_title h1,
+.market_innovation .installation_left .innovation_list li {
   color: #2f3437;
 }
 
 .automation_control_area .automation_control_section .automation_control_box .automation_details_box {
   border-color: #f44336;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin: 0 16px;
+
+    &.btn.btn-red {
+      background: #F44336;
+      color: #fff;
+    }
+
+    &.btn-secondary {
+      border: 3px solid #7b8083;
+      color: #7b8083;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border-radius: 0;
+      font-weight: 500;
+      padding: 21px 41px;
+
+      &:hover {
+        border-color: #2f3437;
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      &:before, &:after {
+        background: #2f3437;
+      }
+    }
+  }
 }
